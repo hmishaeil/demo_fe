@@ -1,0 +1,38 @@
+<div class="row mt-5">
+    <div class="col-3 m-auto">
+        <h3 class="text-info">Login Form</h3>
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col-3 m-auto">
+        <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+            <div class="mb-3">
+                <label for="emailInput" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="emailInput" 
+                placeholder="Please enter your email address" required 
+                email name="email" #emailInput="ngModel" [(ngModel)]="loginRequest.email">
+            </div>
+            <ul *ngIf="!emailInput.valid && emailInput.touched" class="text-danger">
+                <li *ngIf="emailInput.errors?.required">Email field is required.</li>
+                <li *ngIf="emailInput.errors?.email">Email format is required.</li>
+            </ul>
+            <div class="mb-3">
+                <label for="passwordInput" class="form-label">Password</label>
+                <input type="password" class="form-control" id="passwordInput" placeholder="Please enter your password"
+                [(ngModel)]="loginRequest.password" required name="password" #passwordInput="ngModel">
+            </div>
+            <button type="submit" class="btn btn-sm btn-info" [disabled]="loginForm.form.invalid">Login</button>
+        </form>
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col-4 m-auto text-center">
+        <hr>
+        <p>Don't have an account yet?
+            <a routerLink="/register" class="btn btn-sm btn-outline-warning mx-2">Register</a>
+        </p>
+        <p>Forgot password?
+            <a routerLink="/request-reset-password" class="btn btn-sm btn-outline-danger mx-2">Reset Password</a>
+        </p> 
+    </div>
+</div>
