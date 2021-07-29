@@ -14,7 +14,6 @@ import { TermsComponent } from './components/terms/terms.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 
 const routes: Routes = [
-  { path: '', component: CareersComponent },
   { path: '', component: HomeComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'verify-email/:uuid', component: VerifyEmailComponent },
@@ -25,6 +24,7 @@ const routes: Routes = [
   { path: 'how-it-works', component: HowItWorksComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'terms', component: TermsComponent },
+  { path: 'careers', component: CareersComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 @NgModule({
