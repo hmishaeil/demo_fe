@@ -35,6 +35,7 @@ import { HowItWorksModalComponent } from './components/how-it-works-modal/how-it
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { TermsComponent } from './components/terms/terms.component';
+import { CareersComponent } from './components/careers/careers.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { TermsComponent } from './components/terms/terms.component';
     HowItWorksComponent,
     AboutUsComponent,
     TermsComponent,
+    CareersComponent,
   ],
   imports: [
     BrowserModule,

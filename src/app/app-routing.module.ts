@@ -13,7 +13,6 @@ import { TermsComponent } from './components/terms/terms.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 
 const routes: Routes = [
-  { path: '', component: TermsComponent },
   { path: '', component: HomeComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'verify-email/:uuid', component: VerifyEmailComponent },
@@ -23,6 +22,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'how-it-works', component: HowItWorksComponent },
   { path: 'about-us', component: AboutUsComponent },
+  { path: 'terms', component: TermsComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 @NgModule({

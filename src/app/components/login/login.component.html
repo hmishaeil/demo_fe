@@ -10,7 +10,7 @@
                 <label for="emailInput" class="form-label">Email address</label>
                 <input type="email" class="form-control form-control-sm " id="emailInput"
                     placeholder="Please enter your email address" required email name="email" #emailInput="ngModel"
-                    [(ngModel)]="loginRequest.email">
+                    [(ngModel)]="loginRequest.email" autocomplete="off">
             </div>
             <ul *ngIf="!emailInput.valid && emailInput.touched" class="text-danger">
                 <li *ngIf="emailInput.errors?.required">Email field is required.</li>
@@ -22,6 +22,7 @@
                     placeholder="Please enter your password" [(ngModel)]="loginRequest.password" required
                     name="password" #passwordInput="ngModel">
             </div>
+            <br>
             <div class="d-grid gap-2">
                 <button type="submit" class="btn btn-sm btn-info" [disabled]="loginForm.form.invalid">Login</button>
             </div>

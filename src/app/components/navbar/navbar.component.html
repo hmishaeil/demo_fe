@@ -11,28 +11,27 @@
 
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav me-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" routerLink="/how-it-works">How it works
+                <li class="nav-item active mt-1">
+                    <a class="nav-link" routerLink="/how-it-works">How It Works
                         <span class="visually-hidden">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
-                <li class="nav-item">
+                <li class="nav-item mt-1">
                     <div class="btn-group" dropdown>
-                        <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle nav-link"
-                            aria-controls="dropdown-basic">
+                        <button id="button-basic" dropdownToggle type="button"
+                            class="btn dropdown-toggle nav-link btn-link" aria-controls="dropdown-basic">
                             Company <span class="caret"></span>
-                    </button>
+                        </button>
                         <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu"
                             aria-labelledby="button-basic">
                             <li role="menuitem"><a class="dropdown-item" routerLink="/about-us">About Us</a></li>
+                            <li class="divider dropdown-divider"></li>
+
                             <li role="menuitem"><a class="dropdown-item" routerLink="/careers">Careers</a></li>
-                            <li role="menuitem"><a class="dropdown-item" routerLink="/careers">Terms & Conditions</a></li>
+                            <li class="divider dropdown-divider"></li>
+
+                            <li role="menuitem"><a class="dropdown-item" routerLink="/terms">Terms & Conditions</a></li>
+
                             <li class="divider dropdown-divider"></li>
                             <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
                             </li>
