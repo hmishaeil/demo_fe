@@ -5,8 +5,35 @@
 
 
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); */
+
 /* Font Family */
 html, body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'WindSong', 'Roboto', sans-serif; */
+    /* font-family: 'WindSong', cursive; */
+}
+
+.gfg {
+    position: relative;
+}
+
+.first-txt {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.second-txt {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.third-txt {
+    position: absolute;
+    top: 50%;
+    left: 10%;
 }

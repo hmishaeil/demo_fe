@@ -8,6 +8,7 @@ import { RegisterResponse } from '../responses/register-response.model';
 import { EmailVerificationResponse } from '../responses/email-verification-response.model';
 import { BehaviorSubject, Subject } from 'rxjs';
 import { InitResetPasswordRequest } from '../requests/init-reset-password-request.model';
+import { ResetPasswordRequest } from '../requests/reset-password-request.model';
 
 @Injectable({
   providedIn: 'root'
@@ -32,8 +33,11 @@ export class AuthService {
     return this.http.post<LoginResponse>(this.API_URL + "/login", loginRequest);
   }
 
-  requestResetPassword(resetPasswordRequest: InitResetPasswordRequest) {
-    return this.http.post(this.API_URL + "/request-reset-password", resetPasswordRequest);
+  requestResetPassword(initResetPasswordRequest: InitResetPasswordRequest) {
+    return this.http.post(this.API_URL + "/request-reset-password", initResetPasswordRequest);
   }
 
+  resetPassword(uuid: string, resetPasswordRequest: ResetPasswordRequest) {
+    return this.http.post(this.API_URL + `/reset-password/${uuid}`, resetPasswordRequest);
+  }
 }

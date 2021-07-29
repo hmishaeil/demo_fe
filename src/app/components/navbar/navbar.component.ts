@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 import { AuthService } from 'src/app/services/auth.service';
 import { ComponentsStateService } from 'src/app/services/components-state.service';
@@ -11,9 +12,14 @@ import { ComponentsStateService } from 'src/app/services/components-state.servic
 export class NavbarComponent implements OnInit {
 
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService, private router: Router) { }
+
 
   ngOnInit(): void {
+  }
+
+  navigateToHome() {
+    this.router.navigateByUrl("/")
   }
 
 

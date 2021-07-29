@@ -31,6 +31,10 @@ import { NavbarDashboardComponent } from './components/navbar-dashboard/navbar-d
 import { RequestResetPasswordComponent } from './components/request-reset-password/request-reset-password.component';
 import { RequestResetPasswordSentComponent } from './components/request-reset-password-sent/request-reset-password-sent.component';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
+import { HowItWorksModalComponent } from './components/how-it-works-modal/how-it-works-modal.component';
+import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { TermsComponent } from './components/terms/terms.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +55,10 @@ import { ResetPasswordComponent } from './components/reset-password/reset-passwo
     RequestResetPasswordComponent,
     RequestResetPasswordSentComponent,
     ResetPasswordComponent,
+    HowItWorksModalComponent,
+    HowItWorksComponent,
+    AboutUsComponent,
+    TermsComponent,
   ],
   imports: [
     BrowserModule,

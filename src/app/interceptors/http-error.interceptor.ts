@@ -48,7 +48,7 @@ export class HttpErrorInterceptor implements HttpInterceptor {
 
             switch (error.status) {
               case 0:
-                this.toastr.error(errorMsg += "Connection refused.");
+                this.toastr.error(errorMsg += "UNKNOWN ERROR.");
                 break;
               case 400:
               case 401:

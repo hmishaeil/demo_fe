@@ -8,12 +8,12 @@
         </div>
     </div>
     <div class="row mt-5">
-        <div class="col-3 m-auto">
+        <div class="col-3 m-auto border p-5 shadow-lg">
             <form #registerForm="ngForm" (ngSubmit)="onRegister()"
                 [appMatchPassword]="['password', 'passwordConfirmation']">
-                <div class="mb-3">
+                <div class="mb-3 input-sm">
                     <label for="emailInput" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="emailInput"
+                    <input type="email" class="form-control form-control-sm" id="emailInput"
                         placeholder="Please enter your email address" [(ngModel)]="registerRequest.username" required
                         email name="email" #emailInput="ngModel">
                 </div>
@@ -23,18 +23,18 @@
                 </ul>
                 <div class="mb-3">
                     <label for="passwordInput" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="passwordInput"
+                    <input type="password" class="form-control form-control-sm" id="passwordInput"
                         placeholder="Please enter your password" [(ngModel)]="registerRequest.password" required
                         name="password" #passwordInput="ngModel" minlength="8" maxlength="16">
                     <small id="emailHelp" class="form-text text-muted">Password must contain 8 to 16 characters.</small>
                 </div>
                 <ul *ngIf="!passwordInput.valid && passwordInput.touched" class="text-danger">
-                    <li *ngIf="passwordInput.errors?.required">Password confirmation field is required.</li>
+                    <li *ngIf="passwordInput.errors?.required">Password field is required.</li>
                     <li *ngIf="passwordInput.errors?.minlength">Password must be at least 8 characters.</li>
                 </ul>
                 <div class="mb-3">
                     <label for="passwordConfirmationInput" class="form-label">Password confirmation</label>
-                    <input type="password" class="form-control" id="passwordConfirmationInput"
+                    <input type="password" class="form-control form-control-sm" id="passwordConfirmationInput"
                         placeholder="Please confirm your password" [(ngModel)]="registerRequest.passwordConfirmation"
                         required name="passwordConfirmation" #passwordConfirmationInput="ngModel">
                 </div>
@@ -43,17 +43,18 @@
                     <li *ngIf="passwordConfirmationInput.errors?.passwordMismatch">Passwords do not match.</li>
                 </ul>
                 <br>
-                <button type="submit" class="btn btn-sm btn-warning"
-                    [disabled]="registerForm.form.invalid">Register</button>
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-sm btn-warning"
+                        [disabled]="registerForm.form.invalid">Register</button>
+                </div>
             </form>
         </div>
     </div>
     <div class="row mt-5">
         <div class="col-4 m-auto text-center">
             <hr>
-            <p>Already have an account?
-                <a routerLink="/login" class="btn btn-sm btn-outline-info mx-2">Login</a>
-            </p>
+            <a routerLink="/login" class="btn-outline-info mx-2">Already have an account?</a>
         </div>
     </div>
 </div>

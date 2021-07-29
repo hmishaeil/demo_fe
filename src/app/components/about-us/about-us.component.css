@@ -1,0 +1,9 @@
+.team-image {
+    position: relative;
+}
+
+.team-first-txt {
+    position: absolute;
+    top: 50%;
+    left: 42%;
+}
