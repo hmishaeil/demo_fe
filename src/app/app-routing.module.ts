@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { CareersComponent } from './components/careers/careers.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
@@ -13,6 +14,7 @@ import { TermsComponent } from './components/terms/terms.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 
 const routes: Routes = [
+  { path: '', component: CareersComponent },
   { path: '', component: HomeComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'verify-email/:uuid', component: VerifyEmailComponent },

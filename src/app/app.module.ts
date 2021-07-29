@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
@@ -36,6 +37,7 @@ import { HowItWorksComponent } from './components/how-it-works/how-it-works.comp
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { TermsComponent } from './components/terms/terms.component';
 import { CareersComponent } from './components/careers/careers.component';
+import { OpenPositionsComponent } from './components/open-positions/open-positions.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +63,7 @@ import { CareersComponent } from './components/careers/careers.component';
     AboutUsComponent,
     TermsComponent,
     CareersComponent,
+    OpenPositionsComponent,
   ],
   imports: [
     BrowserModule,
@@ -68,6 +71,7 @@ import { CareersComponent } from './components/careers/careers.component';
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
+    AccordionModule.forRoot(),
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
