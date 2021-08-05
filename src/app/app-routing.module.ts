@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 import { LoginComponent } from './components/login/login.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { RegisterComponent } from './components/register/register.component';
 import { RequestResetPasswordComponent } from './components/request-reset-password/request-reset-password.component';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'terms', component: TermsComponent },
   { path: 'careers', component: CareersComponent },
+  { path: 'privacy', component: PrivacyPolicyComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 @NgModule({

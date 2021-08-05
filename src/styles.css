@@ -11,6 +11,7 @@
 
 /* Font Family */
 html, body {
+
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'WindSong', 'Roboto', sans-serif; */
     /* font-family: 'WindSong', cursive; */
@@ -36,4 +37,9 @@ html, body {
     position: absolute;
     top: 50%;
     left: 10%;
+}
+
+
+.gray {
+    color: gainsboro;
 }

@@ -1,0 +1,28 @@
+<div class="row mt-5">
+    <div class="col-3 m-auto">
+        <h3 class="text-info">Login Form</h3>
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col-3 m-auto">
+        <form class="">
+            <div class="mb-3">
+                <label for="emailInput" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="Please enter your email address">
+            </div>
+            <div class="mb-3">
+                <label for="passwordInput" class="form-label">Password</label>
+                <input type="password" class="form-control" id="passwordInput" placeholder="Please enter your password">
+            </div>
+            <button type="submit" class="btn btn-sm btn-info">Login</button>
+        </form>
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col-4 m-auto text-center">
+        <hr>
+        <p>Don't have an account yet?
+            <button class="btn btn-sm btn-outline-warning mx-2" (click)="registerFormRequested()">Register</button>
+        </p>
+    </div>
+</div>
