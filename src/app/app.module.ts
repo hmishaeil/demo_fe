@@ -39,6 +39,7 @@ import { TermsComponent } from './components/terms/terms.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { OpenPositionsComponent } from './components/open-positions/open-positions.component';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-poli
     CareersComponent,
     OpenPositionsComponent,
     PrivacyPolicyComponent,
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,

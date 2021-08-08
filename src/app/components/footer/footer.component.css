@@ -1,7 +1,9 @@
-.footer-back {
-    position: absolute;
+  .custom-footer {
+    /* position: fixed; */
     left: 0;
     bottom: 0;
-    width: 100%;
-    text-align: center;
-  }
+    height: 300px;
+    margin-top: -300px;
+    clear: both;
+    position: relative;
+ }

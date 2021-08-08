@@ -1,6 +1,8 @@
 <app-spinner></app-spinner>
-<app-navbar *ngIf="!isUserLoggedIn"></app-navbar>
-<app-navbar-dashboard *ngIf="isUserLoggedIn"></app-navbar-dashboard>
-<router-outlet></router-outlet>
+<div class="container-fluid">
+    <app-navbar *ngIf="!isUserLoggedIn"></app-navbar>
+    <app-navbar-dashboard *ngIf="isUserLoggedIn"></app-navbar-dashboard>
+    <router-outlet></router-outlet>
 
-<app-footer></app-footer>
+    <app-footer></app-footer>
+</div>

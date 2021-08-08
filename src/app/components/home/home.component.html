@@ -1,151 +1,146 @@
-<div>
-    <div class="row h-75 gfg">
-        <div class="col">
-            <img src="../assets/images/ecommerce-banner.png" class="w-100" alt="...">
-            <h1 class="first-txt gray">Welcome to CashMino</h1>
-            <h3 class="second-txt gray">Get <i class="text-light">Cash Back</i> or <i class="text-light">Free
-                    Gift Card</i> on your online purchases
-            </h3>
-            <!-- <button class="third-txt btn btn-lg btn-warning" (click)="openModal(template)">See how it works</button> -->
-            <button class="third-txt btn btn-lg btn-warning mt-5" (click)="goToHowItWorksPage()">See How It
-                Works</button>
+<div class="row">
+    <div class="col p-0">
+        <img src="../assets/images/ecommerce-banner.png" alt="..." style="width: 100%;">
+        <h1 class="first-txt gray">Welcome to CashMino</h1>
+        <h3 class="second-txt gray">Get <i class="text-light">Cash Back</i> or <i class="text-light">Free
+                Gift Card</i> on your online purchases
+        </h3>
+        <!-- <button class="third-txt btn btn-lg btn-warning" (click)="openModal(template)">See how it works</button> -->
+        <button class="third-txt btn btn-lg btn-warning mt-5" (click)="goToHowItWorksPage()">See How It
+            Works</button>
 
-            <ng-template #template>
-                <div class="modal-header">
-                    <h4 class="modal-title pull-left">How CashMino Works</h4>
-                    <button type="button" class="btn close pull-right" aria-label="Close" (click)="modalRef.hide()">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="px
-                    -5">
-                        <p class="lead">Welcome to our fun reward program that gives you free gift cards and cash for
-                            your every day online shoppings.
-                            <br>
-                            <br> You can put cashback in your wallet after you earn points when you shop at your
-                            favorite retailers finding great deals. Then you can redeem points for gift cards of your
-                            choice like Target or Walmart. You can also get
-                            cash back from PayPal.
-                            <br>
-                            <br> Once you join it is easy to earn points for all the shoppings like other happy members
-                            of CashMino website.
-                        </p>
-                    </div>
-
-                    <br>
-                    <div class="d-grid gap-2">
-                        <a routerLink="/register" class="btn btn-primary" (click)="modalRef.hide()">Join Now!</a>
-                    </div>
-
-                </div>
-            </ng-template>
-
-        </div>
-    </div>
-
-    <div class="row bg-light">
-        <div class="col-8 text-center py-5 m-auto">
-            <h3 class="fw-bold text-info">Get Free Gift Cards & Cash for your every day online shopping</h3>
-        </div>
-    </div>
-
-    <div class="row justify-content-center mt-5">
-        <div class="col-3 m-2 shadow p-3 mb-5 bg-body rounded">
-            <div class="card text-center">
-                <img src="../assets/images/laptop.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
-                    alt="...">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">1. Shop Online</h5>
-                    <br>
-                    <p class="card-text text-info">Use CashMino Website to do your online shopping wherever you are by
-                        your computer, tablet, or phone</p>
-                </div>
+        <!-- <ng-template #template>
+            <div class="modal-header">
+                <h4 class="modal-title pull-left">How CashMino Works</h4>
+                <button type="button" class="btn close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-        </div>
-        <div class="col-3 m-2 shadow p-3 mb-5 bg-body rounded">
-            <div class="card text-center">
-                <img src="../assets/images/cards.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
-                    alt="...">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">2. Earn Points</h5>
-                    <br>
-
-                    <p class="card-text text-info">Your points grow while online shopping. You can monitor them at any
-                        moment in your dashboard.</p>
+            <div class="modal-body">
+                <div class="px
+                        -5">
+                    <p class="lead">Welcome to our fun reward program that gives you free gift cards and cash for
+                        your every day online shoppings.
+                        <br>
+                        <br> You can put cashback in your wallet after you earn points when you shop at your
+                        favorite retailers finding great deals. Then you can redeem points for gift cards of your
+                        choice like Target or Walmart. You can also get
+                        cash back from PayPal.
+                        <br>
+                        <br> Once you join it is easy to earn points for all the shoppings like other happy members
+                        of CashMino website.
+                    </p>
                 </div>
+
+                <br>
+                <div class="d-grid gap-2">
+                    <a routerLink="/register" class="btn btn-primary" (click)="modalRef.hide()">Join Now!</a>
+                </div>
+
             </div>
-        </div>
-        <div class="col-3 m-2 shadow p-3 mb-5 bg-body rounded">
-            <div class="card text-center">
-                <img src="../assets/images/gift-card-2.png" class="card-img-top m-auto p-2"
-                    style="width: 75px; height: 75px" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">3. Get Back Cash or Gift Cards</h5>
-                    <br>
+        </ng-template> -->
 
-                    <p class="card-text text-info">Enjoy! Redeem your points as Gift Card or Cash Back, when you get
-                        notified. </p>
-                </div>
+    </div>
+</div>
+
+<div class="row bg-light">
+    <div class="col-8 text-center py-5 m-auto">
+        <h3 class="fw-bold text-info">Get Free Gift Cards & Cash for your every day online shopping</h3>
+    </div>
+</div>
+
+<div class="row justify-content-center mt-5">
+    <div class="col-3 m-2 shadow p-3 mb-5 bg-body rounded">
+        <div class="card text-center">
+            <img src="../assets/images/laptop.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">1. Shop Online</h5>
+                <br>
+                <p class="card-text text-info">Use CashMino Website to do your online shopping wherever you are by
+                    your computer, tablet, or phone</p>
             </div>
         </div>
     </div>
+    <div class="col-3 m-2 shadow p-3 mb-5 bg-body rounded">
+        <div class="card text-center">
+            <img src="../assets/images/cards.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">2. Earn Points</h5>
+                <br>
 
-    <div class="row bg-light mt-3">
-        <div class="col-6 m-auto text-center p-5">
-            <h3 class="text-info">Projected to pay our members across the world over</h3>
-            <h1 style="font-family: 'Orbitron', sans-serif;" class="fw-bold text-warning">$ 25,000,000</h1>
-            <h3 class="text-info">Worth of Gift Cards or Cash Back</h3>
+                <p class="card-text text-info">Your points grow while online shopping. You can monitor them at any
+                    moment in your dashboard.</p>
+            </div>
         </div>
     </div>
-
-    <div class="row mt-5 p-3">
-        <div class="col m-auto text-center">
-            <h3 class="text-info">We Got Your Back! </h3>
-            <h4 class="text-info">Earn While Shopping in Every Category</h4>
-            <br>
-            <br>
-            <img src="../assets/images/world.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
-                alt="...">
-            <img src="../assets/images/sports.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
-                alt="...">
-            <img src="../assets/images/cream.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
-                alt="...">
-            <img src="../assets/images/grocery.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
-                alt="...">
-            <img src="../assets/images/wine.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
-                alt="...">
-            <img src="../assets/images/beer.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
-                alt="...">
-            <img src="../assets/images/car.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
-                alt="...">
-            <img src="../assets/images/house.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
-                alt="...">
-            <img src="../assets/images/boy.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
-                alt="...">
-            <img src="../assets/images/pets.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
-                alt="...">
-            <img src="../assets/images/dress.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
-                alt="...">
-            <img src="../assets/images/male-clothes.png" class="card-img-top m-auto p-2"
+    <div class="col-3 m-2 shadow p-3 mb-5 bg-body rounded">
+        <div class="card text-center">
+            <img src="../assets/images/gift-card-2.png" class="card-img-top m-auto p-2"
                 style="width: 75px; height: 75px" alt="...">
-            <img src="../assets/images/restaurant.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
-                alt="...">
-            <img src="../assets/images/desktop-computer.png" class="card-img-top m-auto p-2"
-                style="width: 75px; height: 75px" alt="...">
-            <br>
-            <br>
-            <br>
-            <a routerLink="/" class="btn btn-success">Find Deals</a>
+            <div class="card-body">
+                <h5 class="card-title fw-bold">3. Get Back Cash or Gift Cards</h5>
+                <br>
+
+                <p class="card-text text-info">Enjoy! Redeem your points as Gift Card or Cash Back, when you get
+                    notified. </p>
+            </div>
         </div>
     </div>
+</div>
 
-    <div class="row mt-5 bg-light p-5">
-        <div class="col-6 m-auto text-center">
-            <h3 class="text-info">Let's save money while shopping!</h3>
-            <br>
-            <a routerLink="register" class="btn btn-warning">Register Now!</a>
-        </div>
+<div class="row bg-light mt-3">
+    <div class="col-6 m-auto text-center p-5">
+        <h3 class="text-info">Projected to pay our members across the world over</h3>
+        <h1 style="font-family: 'Orbitron', sans-serif;" class="fw-bold text-warning">$ 25,000,000</h1>
+        <h3 class="text-info">Worth of Gift Cards or Cash Back</h3>
     </div>
+</div>
 
+<div class="row mt-5 p-3">
+    <div class="col m-auto text-center">
+        <h3 class="text-info">We Got Your Back! </h3>
+        <h4 class="text-info">Earn While Shopping in Every Category</h4>
+        <br>
+        <br>
+        <img src="../assets/images/world.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
+            alt="...">
+        <img src="../assets/images/sports.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
+            alt="...">
+        <img src="../assets/images/cream.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
+            alt="...">
+        <img src="../assets/images/grocery.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
+            alt="...">
+        <img src="../assets/images/wine.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
+            alt="...">
+        <img src="../assets/images/beer.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
+            alt="...">
+        <img src="../assets/images/car.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px" alt="...">
+        <img src="../assets/images/house.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
+            alt="...">
+        <img src="../assets/images/boy.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px" alt="...">
+        <img src="../assets/images/pets.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
+            alt="...">
+        <img src="../assets/images/dress.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
+            alt="...">
+        <img src="../assets/images/male-clothes.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
+            alt="...">
+        <img src="../assets/images/restaurant.png" class="card-img-top m-auto p-2" style="width: 75px; height: 75px"
+            alt="...">
+        <img src="../assets/images/desktop-computer.png" class="card-img-top m-auto p-2"
+            style="width: 75px; height: 75px" alt="...">
+        <br>
+        <br>
+        <br>
+        <a routerLink="/" class="btn btn-success">Find Deals</a>
+    </div>
+</div>
+
+<div class="row mt-5 bg-light p-5">
+    <div class="col-6 m-auto text-center">
+        <h3 class="text-info">Let's save money while shopping!</h3>
+        <br>
+        <a routerLink="register" class="btn btn-warning">Register Now!</a>
+    </div>
 </div>

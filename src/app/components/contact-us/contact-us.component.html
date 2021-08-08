@@ -1,0 +1,59 @@
+<div style="height: 65vh;">
+    <div class="row mt-5">
+        <div class="col-3 m-auto">
+            <h3 class="text-info">Let's talk about your concerns</h3>
+        </div>
+    </div>
+    <div class="row justify-content-center m-5">
+        <div class="col-4">
+            <form (ngSubmit)="onSubmit()" #contactUsForm="ngForm">
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label">Email address</label>
+                    <input type="email" class="form-control form-control-sm " id="emailInput"
+                        placeholder="Please enter your email address" required email name="email" #emailInput="ngModel"
+                        [(ngModel)]="contactUsRequest.email" autocomplete="off">
+                </div>
+                <ul *ngIf="!emailInput.valid && emailInput.touched" class="text-danger">
+                    <li *ngIf="emailInput.errors?.required">Email field is required.</li>
+                    <li *ngIf="emailInput.errors?.email">Email format is required.</li>
+                </ul>
+
+                <br>
+                <div class="btn-group" dropdown>
+                    <button id="button-basic" dropdownToggle type="button"
+                        class="btn btn-sm btn-outline-info dropdown-toggle" aria-controls="dropdown-basic">
+                        Concern Type<span class="caret"></span>
+                    </button>
+                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu"
+                        aria-labelledby="button-basic">
+                        <li role="menuitem" class="dropdown-item" *ngFor="let option of options" [value]="option"
+                            (click)="optionChosen(option)">{{option}}</li>
+                    </ul>
+                </div>
+                <span class="m-3">{{this.contactUsRequest.type}}</span>
+      
+                <br>
+                <br>
+
+                <div class="mb-3">
+                    <label for="messageTextArea" class="form-label">Message</label>
+                    <textarea class="form-control" id="messageTextArea" rows="3"
+                        placeholder="Please enter a brief description of your concern here" required name="message"
+                        #messageTextArea="ngModel" [(ngModel)]="contactUsRequest.message" maxlength="256"></textarea>
+                    <span class="small">
+                        {{contactUsRequest.message.length}}/256
+                    </span>
+                </div>
+
+                <ul *ngIf="!messageTextArea.valid && messageTextArea.touched" class="text-danger">
+                    <li *ngIf="messageTextArea.errors?.required">Message field is required.</li>
+                </ul>
+
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-sm btn-info" [disabled]="contactUsForm.form.invalid">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { CareersComponent } from './components/careers/careers.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'how-it-works', component: HowItWorksComponent },
   { path: 'about-us', component: AboutUsComponent },
+  { path: 'contact-us', component: ContactUsComponent },
   { path: 'terms', component: TermsComponent },
   { path: 'careers', component: CareersComponent },
   { path: 'privacy', component: PrivacyPolicyComponent },

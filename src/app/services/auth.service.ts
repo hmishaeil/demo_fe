@@ -6,7 +6,7 @@ import { environment } from '../../environments/environment';
 import { RegisterRequest } from '../requests/register-request.model';
 import { RegisterResponse } from '../responses/register-response.model';
 import { EmailVerificationResponse } from '../responses/email-verification-response.model';
-import { BehaviorSubject, Subject } from 'rxjs';
+import { Subject } from 'rxjs';
 import { InitResetPasswordRequest } from '../requests/init-reset-password-request.model';
 import { ResetPasswordRequest } from '../requests/reset-password-request.model';
 
