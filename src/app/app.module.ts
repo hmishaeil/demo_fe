@@ -40,6 +40,7 @@ import { CareersComponent } from './components/careers/careers.component';
 import { OpenPositionsComponent } from './components/open-positions/open-positions.component';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     OpenPositionsComponent,
     PrivacyPolicyComponent,
     ContactUsComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
