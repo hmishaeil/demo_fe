@@ -23,20 +23,20 @@ html, body {
 
 .first-txt {
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: 5em;
+    left: 5em;
 }
 
 .second-txt {
     position: absolute;
-    top: 40%;
-    left: 10%;
+    top: 10em;
+    left: 7em;
 }
 
 .third-txt {
     position: absolute;
-    top: 50%;
-    left: 10%;
+    top: 20em;
+    left: 10em;
 }
 
 
